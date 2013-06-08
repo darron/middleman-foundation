@@ -1,19 +1,23 @@
-# HOWTO
+## REQUIREMENTS
+
+Ruby 1.9.3 or higher.
+[Heroku](http://www.heroku.com) account.
+
+## HOWTO
 
 Download.
 
-`bundle install`
-
-`middleman`
+```bundle install
+middleman```
 
 Browse to [http://localhost:4567](http://localhost:4567)
 
-# DEPLOY
+Edit the files in source/ - your site will automatically reload in the browser.
 
-`heroku create`
+## DEPLOY
 
-`heroku config:add MIDDLEMAN_DOMAIN_NAME="the-domain-name-from-heroku`
+```heroku create
+heroku config:add MIDDLEMAN_DOMAIN_NAME="the-domain-name-from-heroku"
+git push heroku master```
 
-`git push heroku master`
-
-The [config.ru](/darron/middleman-foundation/blob/master/config.ru) will statically compile the site.
+The Ruby buildpack will statically compile the site during the `rake assets:precompile` phase after it's been pushed to Heroku.
