@@ -45,6 +45,8 @@ To disable password protection:
 heroku config:add PASSWORD_PROTECTED="false"
 ```
 
+You can also add helpers to config.rb - they can help with templating.
+
 ## Thanks to:
 
 [Middleman](http://middlemanapp.com/)
