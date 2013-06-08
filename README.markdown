@@ -26,6 +26,8 @@ git push heroku master
 
 The Ruby buildpack will statically compile the site during the `rake assets:precompile` phase after it's been pushed to Heroku.
 
+Take a look at this [example site](http://middleman-foundation.herokuapp.com).
+
 ## Additional Features:
 
 Want to password protect your site?
@@ -45,4 +47,9 @@ heroku config:add PASSWORD_PROTECTED="false"
 ## Thanks to:
 
 [Middleman](http://middlemanapp.com/)
+
 [Zurb Foundation](http://foundation.zurb.com/)
+
+[Social Web Icons by Fairhead Creative](http://zurb.com/playground/social-webicons)
+
+[Matt Olson's Sitemap Generator](https://github.com/mattolson/middleman-zurb-template)
