@@ -21,6 +21,7 @@ Edit the files in source/ - your site will automatically reload in the browser.
 ```
 heroku create
 heroku config:add MIDDLEMAN_DOMAIN_NAME="the-domain-name-from-heroku"
+heroku config:add FAKER_LOCALE="en"
 git push heroku master
 ```
 

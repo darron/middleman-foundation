@@ -1,6 +1,26 @@
 ---
 layout: default
-title: Contact Us Page for Your Company
+title: Contact Us Page
 ---
 
-<h1>Contact Us</h1>
+<div class="row">
+	<div class="large-12 columns">
+		<h1>Contact Us</h1>
+	</div>
+</div>
+<div class="row">
+	<div class="large-8 columns">
+		<%= simple_format(lorem.paragraphs 2) %>
+		<img src="http://placehold.it/200x200&text=[ img 1 ]" align="left" style="margin-right:5px;" />
+		<%= simple_format(lorem.paragraphs 3) %>
+	</div>
+	<div class="large-4 columns">
+		<h3>Call me maybe!</h3>
+		<p><strong><%= random_name %></strong></p>
+		<p><%= random_address %></p>
+		<p><%= random_phone_number %></p>
+		<p><a href="mailto:<%= random_email_address %>"><%= random_email_address %></a></p>
+		<a class="large button" href="#">Call To Action!</a>
+        <%= simple_format(lorem.paragraphs 1) %>
+	</div>
+</div>
