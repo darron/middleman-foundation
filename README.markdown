@@ -5,10 +5,11 @@ Ruby 1.9.3 or higher.
 
 ## HOWTO
 
-Download.
-
-```bundle install
-middleman```
+```
+git clone git://github.com/darron/middleman-foundation.git
+bundle install
+middleman
+```
 
 Browse to [http://localhost:4567](http://localhost:4567)
 
@@ -16,8 +17,10 @@ Edit the files in source/ - your site will automatically reload in the browser.
 
 ## DEPLOY
 
-```heroku create
+```
+heroku create
 heroku config:add MIDDLEMAN_DOMAIN_NAME="the-domain-name-from-heroku"
-git push heroku master```
+git push heroku master
+```
 
 The Ruby buildpack will statically compile the site during the `rake assets:precompile` phase after it's been pushed to Heroku.
