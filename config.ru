@@ -6,7 +6,7 @@
 # - `/foo` will try to serve `build/foo` or `build/foo.html` in that order
 # - missing files will try to serve build/404.html or a tiny default 404 page
 
-if ENV["PASSWORD_PROTECTED"]
+if ENV["PASSWORD_PROTECTED"] == true
   use Rack::Auth::Basic, "Restricted Area" do |username, password|
     [username, password] == [ENV["HTTP_USERNAME"], ENV["HTTP_PASSWORD"]]
   end
