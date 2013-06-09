@@ -1,0 +1,7 @@
+<ul class="breadcrumbs">
+  <li><a href="/">Home</a></li>
+  <% current_page.data.breadcrumbs.each do |f| %>
+    <% title, url = f.split('|') %>
+    <li><a href="<%= url %>"><%= title %></a></li>
+  <% end %>
+</ul>
