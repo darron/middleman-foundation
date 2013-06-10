@@ -47,6 +47,10 @@ heroku config:add PASSWORD_PROTECTED="false"
 
 You can also add helpers to config.rb - they can help with templating.
 
+## To make this better:
+
+1. Better breadcrumb generation - DRY it up: [https://github.com/andi/simple-navigation](https://github.com/andi/simple-navigation)
+
 ## Thanks to:
 
 [Middleman](http://middlemanapp.com/)
